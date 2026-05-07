@@ -37,7 +37,7 @@ def create_activities(users):
 # Create Workouts
 def create_workouts(users):
     w1, _ = Workout.objects.get_or_create(name='Pushups', description='Do 20 pushups')
-    w2, _ = Workout.objects.get_or_create(name='Situps', description='Do 30 situps')
+    w2, _ = Workout.objects.get_or_create(name='Burpees', description='Do 30 burpees')
     w1.suggested_for.set([users[0], users[1]])
     w2.suggested_for.set([users[2]])
     return [w1, w2]
