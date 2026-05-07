@@ -30,8 +30,9 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
-# Application definition
+AUTH_USER_MODEL = 'octofit_tracker.User'
 
+# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
